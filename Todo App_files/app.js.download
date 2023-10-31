@@ -1,0 +1,36 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const todoList = document.getElementById('todo-list');
+    const todoInput = document.getElementById('todo-input');
+    const addButton = document.getElementById('add-button');
+
+    // Function to create a new todo item and append it to the list
+    function addTodo() {
+        const taskText = todoInput.value.trim();
+        if (taskText === '') return;
+
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <span>${taskText}</span>
+            <button class="delete-button">Delete</button>
+        `;
+
+        // Add an event listener to delete the task when the "Delete" button is clicked
+        const deleteButton = listItem.querySelector('.delete-button');
+        deleteButton.addEventListener('click', function () {
+            todoList.removeChild(listItem);
+        });
+
+        todoList.appendChild(listItem);
+        todoInput.value = '';
+    }
+
+    // Add a new task when the "Add" button is clicked
+    addButton.addEventListener('click', addTodo);
+
+    // Add a new task when the "Enter" key is pressed
+    todoInput.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            addTodo();
+        }
+    });
+});
