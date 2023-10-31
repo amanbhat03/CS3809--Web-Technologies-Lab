@@ -1,0 +1,123 @@
+Program:-
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: White;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1> Sample Resume</h1>
+<p>Welcome!</p>
+
+</div>
+			<div class="Contact">
+				<h2>Contact</h2>
+				<p><b>Email id:</b>aman123@gmail.com</p>
+				<p><b>Mobile no :</b>9456213531</p>
+			</div>
+			<div class="Skills">
+				<h2>Skills</h2>
+				<ul>
+					<li><b>Programming Languages :
+					Python, Java, C++</b></li>
+                  <li><b>Database Management : 
+                    MySQL, SQL</b></li>
+				</ul>
+			</div>
+			<div class="Language">
+				<h2>Language</h2>
+				<ul>
+					<li>English</li>
+					<li>Hindi</li>
+				</ul>
+			</div>
+			<div class="Hobbies">
+				<h2>Hobbies</h2>
+				<ul>
+					<li>Music</li>
+					<li>Drama</li>
+                  <li>Gardening</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="name">
+				</div>
+			<div class="title">
+			</div>
+			<div class="Summary">
+              <hi>Summary</hi>
+				<p>To secure a challenging position in a
+				reputable organization
+					to expand my learning knowledge and skill
+              </p>
+			</div>
+			<div class="Experience">
+				<h2>Experience</h2>
+				<h3>IoT & Embedded Systems</h3>
+				<p>January 2022 to Present</p>
+				<ul>
+					<li>Actively engaged in
+					design and development of IoT Products.</li>
+					<li>Designing project & planning</li>
+				</ul>
+				<h3>Green Digital Skills</h3>
+				<p>August 2021 to December 2021</p>
+				<ul>
+					<li>Acively involved in Green Technology
+                  and Green Infrastructure.</li>
+                  <li>Determining Carbon Footprints in various situations.</li>
+				</ul>
+			</div>
+			<div class="Education">
+				<h2>Education</h2>
+				<table>
+					<tr>
+						<th>University/college </th>
+						<th>Passing year </th>
+						<th>percentage/cgpa</th>
+					</tr>
+					<tr>
+						<td>SNU Chennai</td>
+						<td>2025</td>
+						<td>8.5</td>
+					</tr>
+					<tr>
+						<td>VPMS Pune</td>
+						<td>2021</td>
+						<td>89%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="project">
+				<ul>
+					<li>
+						<h2>Project1</h2>
+						<p>This project is based on IoT & Smart Parking System</p>
+					</li>
+					<li>
+						<h2>Project2</h2>
+						<p>IoT based Weather monitoring System</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+  <th>Thankyou!</th>
+</html>
