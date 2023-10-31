@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>CalculatorApp</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./CalculatorApp_files/styles.css"><style>/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+
+.calculator[_ngcontent-ng-c4237825248] {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  input[type="text"][_ngcontent-ng-c4237825248] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #d3e4e7;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right; 
+
+  overflow: hidden; 
+
+  white-space: nowrap; 
+
+  text-overflow: ellipsis; 
+
+  }
+  
+  .buttons[_ngcontent-ng-c4237825248] {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button[_ngcontent-ng-c4237825248] {
+    padding: 20px 15px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5fafe4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button[_ngcontent-ng-c4237825248]:hover {
+    background-color: #314e61;
+  }
+  
+  button[_ngcontent-ng-c4237825248]:active {
+    background-color: #509acf;
+  }
+  
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY2FsY3VsYXRvci9jYWxjdWxhdG9yLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0RBQWdEO0FBQ2hEO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsc0JBQXNCO0lBQ3RCLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsd0NBQXdDO0lBQ3hDLGFBQWE7RUFDZjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixZQUFZO0lBQ1oseUJBQXlCO0lBQ3pCLG1CQUFtQjtJQUNuQix3Q0FBd0M7SUFDeEMsaUJBQWlCLEVBQUUsd0NBQXdDO0VBQzdELGdCQUFnQixFQUFFLDBCQUEwQjtFQUM1QyxtQkFBbUIsRUFBRSx3QkFBd0I7RUFDN0MsdUJBQXVCLEVBQUUsMkNBQTJDO0VBQ3BFOztFQUVBO0lBQ0UsYUFBYTtJQUNiLHFDQUFxQztJQUNyQyxTQUFTO0VBQ1g7O0VBRUE7SUFDRSxrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIseUJBQXlCO0lBQ3pCLFdBQVc7SUFDWCxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DOztFQUVBO0lBQ0UseUJBQXlCO0VBQzNCOztFQUVBO0lBQ0UseUJBQXlCO0VBQzNCIiwic291cmNlc0NvbnRlbnQiOlsiLyogc3JjL2FwcC9jYWxjdWxhdG9yL2NhbGN1bGF0b3IuY29tcG9uZW50LmNzcyAqL1xyXG4uY2FsY3VsYXRvciB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXgtd2lkdGg6IDMwMHB4O1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjY2NjO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7XHJcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggcmdiYSgwLCAwLCAwLCAwLjIpO1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICB9XHJcbiAgXHJcbiAgaW5wdXRbdHlwZT1cInRleHRcIl0ge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBwYWRkaW5nOiAxNXB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNkM2U0ZTc7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgIHRleHQtYWxpZ246IHJpZ2h0OyAvKiBSaWdodC1hbGlnbiB0aGUgdGV4dCBpbiB0aGUgZGlzcGxheSAqL1xyXG4gIG92ZXJmbG93OiBoaWRkZW47IC8qIEhpZGUgb3ZlcmZsb3dpbmcgdGV4dCAqL1xyXG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7IC8qIFByZXZlbnQgbGluZSBicmVha3MgKi9cclxuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpczsgLyogRGlzcGxheSBhbiBlbGxpcHNpcyAoLi4uKSBmb3Igb3ZlcmZsb3cgKi9cclxuICB9XHJcbiAgXHJcbiAgLmJ1dHRvbnMge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDQsIDFmcik7XHJcbiAgICBnYXA6IDEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIGJ1dHRvbiB7XHJcbiAgICBwYWRkaW5nOiAyMHB4IDE1cHg7XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzVmYWZlNDtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjJzO1xyXG4gIH1cclxuICBcclxuICBidXR0b246aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMxNGU2MTtcclxuICB9XHJcbiAgXHJcbiAgYnV0dG9uOmFjdGl2ZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTA5YWNmO1xyXG4gIH1cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+<body>
+  <app-root _nghost-ng-c311746550="" ng-version="16.2.10"><div _ngcontent-ng-c311746550=""><h1 _ngcontent-ng-c311746550="">Simple Calculator</h1><p _ngcontent-ng-c311746550="">Welcome!</p><app-calculator _ngcontent-ng-c311746550="" _nghost-ng-c4237825248=""><div _ngcontent-ng-c4237825248="" class="calculator"><input _ngcontent-ng-c4237825248="" type="text" disabled=""><input _ngcontent-ng-c4237825248="" type="text" disabled=""><div _ngcontent-ng-c4237825248="" class="buttons"><button _ngcontent-ng-c4237825248="">7</button><button _ngcontent-ng-c4237825248="">8</button><button _ngcontent-ng-c4237825248="">9</button><button _ngcontent-ng-c4237825248="">/</button><button _ngcontent-ng-c4237825248="">4</button><button _ngcontent-ng-c4237825248="">5</button><button _ngcontent-ng-c4237825248="">6</button><button _ngcontent-ng-c4237825248="">*</button><button _ngcontent-ng-c4237825248="">1</button><button _ngcontent-ng-c4237825248="">2</button><button _ngcontent-ng-c4237825248="">3</button><button _ngcontent-ng-c4237825248="">-</button><button _ngcontent-ng-c4237825248="">C</button><button _ngcontent-ng-c4237825248="">0</button><button _ngcontent-ng-c4237825248="">=</button><button _ngcontent-ng-c4237825248="">+</button><button _ngcontent-ng-c4237825248="">AC</button><!--bindings={
+  "ng-reflect-ng-for-of": "7,8,9,/,4,5,6,*,1,2,3,-,C,0,=,"
+}--></div></div></app-calculator></div></app-root>
+<script src="./CalculatorApp_files/runtime.js.download" type="module"></script><script src="./CalculatorApp_files/polyfills.js.download" type="module"></script><script src="./CalculatorApp_files/styles.js.download" defer=""></script><script src="./CalculatorApp_files/vendor.js.download" type="module"></script><script src="./CalculatorApp_files/main.js.download" type="module"></script>
+
+</body></html>
